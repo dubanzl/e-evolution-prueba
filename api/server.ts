@@ -19,7 +19,7 @@ class Server {
 	}
 
 	config(): void {
-		this.app.set('port', this.port || 3210);
+		this.app.set('port', this.port || 3001);
 		this.app.use(express.static(config.get('public')));
 		this.app.set('views', config.get('public'));
 		this.app.engine('html', cons.swig);
