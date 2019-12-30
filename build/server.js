@@ -26,7 +26,7 @@ class Server {
         this.routes();
     }
     config() {
-        this.app.set('port', this.port || 3210);
+        this.app.set('port', this.port || 3001);
         this.app.use(express_1.default.static(config_1.default.get('public')));
         this.app.set('views', config_1.default.get('public'));
         this.app.engine('html', consolidate_1.default.swig);
