@@ -5,7 +5,8 @@
   "main": "api/server.ts",
   "scripts": {
     "start": "nodemon",
-    "build-win:prod": "set NODE_ENV=production&& tsc"
+    "build-win:prod": "set NODE_ENV=production&& tsc",
+    "start:prod": "export NODE_ENV=production&& sudo pm2 start ./build/api/server.js"
   },
   "keywords": [
     "Express"
